@@ -1,0 +1,118 @@
+'''height=1.79
+weight=68.7
+weight/height**2
+bmi=weight/height**2
+print(bmi)
+
+i=12
+print(type(i))
+i=5.6
+print(type(i))
+
+i=100
+i+=200
+print(i)
+
+print(10>>2)
+
+
+print(55>>4)
+
+print((10<5)and(8>5))
+print(not(10<5)or(8<5))
+
+
+#task1:largest number
+n1=float(input("first number:"))
+n2=float(input("second number:"))
+n3=float(input("third number:"))
+
+if(n1>=n2)and(n1>=n3):
+    large=n1
+elif (n2>=n1)and(n2>=n3):
+    large=n2
+else:
+    large=n3
+print("largest number among three is:",large)
+
+task2 with function
+#task1:largest number
+n1=float(input("first number:"))
+n2=float(input("second number:"))
+n3=float(input("third number:"))
+def find_Biggest():
+if(n1>=n2)and(n1>=n3):
+    large=n1
+elif (n2>=n1)and(n2>=n3):
+    large=n2
+else:
+    large=n3
+print("largest number among three is:",large)
+find_Biggest()
+
+
+
+
+#task 3:age
+name= input("enter ua name:")
+age= int(input("enter ua age:"))
+j = (100-age)+2021
+print("the user turns 100 years old in:",j)
+
+task3 with using function
+name=input("enter your name:")
+age =int(input("enter your age"))
+def find_age():
+    j=100-age
+    year=2021+j
+    print("you will turn  100 years old on:",year)
+    return
+print(year())
+
+
+task6
+while True:
+    choice = input("Do want to play a game ? Yes/No\n")
+    if choice == 'Yes':
+        player1=input("Player 1, Enter Your Choice whether rock/paper/scissors:")
+        player2 = input("Player 2, Enter Your Choice whether rock/paper/scissors:")
+        if player1 == player2:
+            print("Its a same")
+
+        elif player1 == 'rock':
+            if player2 == 'scissors':
+                print("Player 1 wins\n ")
+            else:
+                print("Player 2 wins\n ")
+        elif player1 == 'scissors':
+            if player2 == 'paper':
+                print("Player1 wins\n ")
+            else:
+                print("Player 2 wins\n C")
+        elif player1 == 'paper':
+            if player2 == 'rock':
+                print("Player1 wins\n ")
+            else:
+                print("Player2 wins\n ")
+    else:
+        print("Run again")
+        break
+
+
+
+
+
+
+
+© 2021 GitHub, Inc.
+Terms
+Privacy
+Security
+Status
+Docs
+Contact GitHub
+Pricing
+API
+Training
+Blog
+About
