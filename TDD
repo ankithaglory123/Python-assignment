@@ -1,0 +1,41 @@
+D:\PycharmProjects\case study\TDD
+def findbigger(x,y,z):
+    if(check_int_float(x) and check_int_float(y) and check_int_float(z)):
+        if (x>=y and x>=z):
+            return x
+        elif (y>=x and y>=z):
+            return y
+        elif ( z>= x and z >= y):
+            return z
+    else:
+        return "error"
+
+def check_int_float(x):
+    if(type(x)== int or type(x) == float):
+        return True
+    else:
+false
+
+
+
+
+
+import unittest
+from service.greatest import greatest
+
+
+class greatesttest(unittest.TestCase):
+    def testgreatest1(self):
+        self.assertEqual(greatest(0, 0,0), 0)
+
+    def testgreatest2(self):
+        self.assertEqual(greatest(1,2,3), 3)
+
+    def testgreatest3(self):
+        self.assertEqual(greatest(-1, 9 , 7), 9)
+
+    def testgreatest4(self):
+        self.assertEqual(greatest("A", 3,7), None)
+
+        def testgreatest4(self):
+            self.assertEqual(greatest(-1,-2,-3), -1)
